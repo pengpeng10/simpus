@@ -41,7 +41,7 @@ class Perpustakaan : Pencarian {
     fun pinjam(itemId: String, anggotaId: String): Peminjaman {
         val item = items[itemId] ?: throw ItemTidakDitemukanException(itemId)
         if (!anggotas.containsKey(anggotaId)) throw AnggotaTidakDitemukanException(anggotaId)
-        if (!item.tersedia) throw ItemTidakTersediaException(item.judul)
+     //   if (!item.tersedia) throw ItemTidakTersediaException(item.judul)
 
         item.tandaiDipinjam()
         val p = Peminjaman(itemId = itemId, anggotaId = anggotaId)

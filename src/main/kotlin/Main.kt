@@ -151,3 +151,5 @@ private fun seedData() {
     perpus.tambahAnggota(Anggota("A001", "Andi", "andi@mail.com"))
     perpus.tambahAnggota(Anggota("A002", "Bunga", "bunga@mail.com"))
 }
+
+
